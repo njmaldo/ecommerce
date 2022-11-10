@@ -1,0 +1,137 @@
+.container .header {
+    background: #cccccc;
+    grid-area: header;
+}
+.header__navbar {
+    align-items: center;
+    background-color: var(--background-color);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding: 1.2rem;
+    position: relative;
+}
+.dark .header__navbar{
+    background: var(--oscuro-1);
+}
+.dark .header__top-contact {
+    background: var(--oscuro-1);
+}
+.header__navbar-fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.header__navbar .logo {
+    width: 50px;
+    height: 25px;
+    grid-column: 1/2;
+}
+.header__top-contact {
+    background-color: #0a6999;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 300;
+    padding: 2.1rem 0rem 0.5rem 1.5rem;
+}
+.header__top-contact-bg {
+    background: #014e7a;
+    height: 38px;
+    position: absolute;
+    right: 0;
+    top: 0px;
+    width: 50%;
+    z-index: 99;
+}
+.header__top-contact-bg::after {
+    border-color: #014e7a transparent;
+    border-style: solid;
+    border-width: 40px;
+    content: "";
+    left: -40px;
+    position: relative;
+    top: -19px;
+}
+.header__menu {
+    grid-column: 6/12;
+    display: flex;
+    justify-content: space-evenly;
+}
+.header__menu li {
+    list-style: none;
+}
+.dark .header__menu{
+    color: #fff;
+}
+.header__enlace {
+    text-decoration: none;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+.header__enlace .active:hover {
+    color: #dedede;
+}
+.header__menu a:hover {
+    color: #fff;
+}
+.search__div {
+    display: none;
+}
+.search__input {
+    background: var(--background-color);
+    border-radius: 8px;
+    border-color: #fff;
+    height: 1.3rem;
+    position: relative;
+    text-align: center;
+    width: 250px;
+}
+.show {
+    display: block;
+    grid-column: 3/5;
+    position: absolute;
+
+}
+
+.header__menu-bar {
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .header__top-contact {
+        padding: 2.5rem 0rem 0.5rem 1.5rem;   
+    }
+    .header__menu-bar {
+        display: block;
+        grid-column: 12/13;
+        font-size: 2em;
+        cursor: pointer;
+    }
+    .header__menu {
+        display: grid;
+        position: absolute;
+        align-items: center;
+        width: 100%;
+        height: 54vh;
+        margin-top: 38.6em;
+        background-color: #cccccc;
+        transform: translateX(170%);
+        transition: all 600ms;
+    }
+    .header__navbar .menu_toggle {
+        transform: translateX(70%);
+    }
+    .header__menu a:hover {
+        color: #fff;
+    }
+    .header__switch {
+        grid-column: 8/9;
+    }
+}
+@media screen and (max-width: 375px) {
+    .header__menu {
+        margin-top: 27em;
+    }
+    .header__navbar .menu_toggle {
+        transform: translateX(50%);
+    }
+}

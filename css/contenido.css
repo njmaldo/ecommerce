@@ -1,0 +1,45 @@
+
+.contenido {
+    grid-area: contenido;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, auto);
+}
+/* ------ Banner ---- */
+.contenido__banner {
+    background-image: url('../images/3.jpeg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover; 
+    grid-column: 1/5;
+    height: 55vh;
+    margin-top: 7rem;
+    position: relative;
+    text-align: center;
+}
+.contenido__overlay {
+    background: rgba(0, 0, 0, .5);
+    bottom: 0;
+    content: '';
+    left: 0;
+    right: 0;
+    position: absolute;
+    top: 0;
+  }
+  .contenido__text-center {
+	padding: 7.75rem;
+    color: #fff;
+	font-size: 75px;
+    font-weight: 700;
+}
+@media screen and (max-width: 768px){
+    .contenido__banner {
+        height: 35vh;
+    }
+}
+@media screen and (max-width: 375px) {
+    .contenido__banner-text-center {
+        padding: 2.5rem;
+    }
+}
