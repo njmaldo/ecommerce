@@ -1,9 +1,24 @@
 {
   "perfil": [
     {
-      "nombre": "Nestor",
-      "email": "nestor@test.com",
-      "id": 1
+      "nombre": "Silvina",
+      "email": "silvana@alura",
+      "id": "f857bd89-c5c5-40d6-917e-4e81809f7f81"
+    },
+    {
+      "nombre": "Nestor J.",
+      "email": "hola@hola.com",
+      "id": "512423c5-fa31-459a-af93-0f37be388332"
+    },
+    {
+      "nombre": "Ivanna Strack",
+      "email": "ivanna@cosa.com",
+      "id": "21253559-8bb0-4fe9-81ec-f4530e00685f"
+    },
+    {
+      "nombre": "Edith nieto",
+      "email": "edith@nieto3.com",
+      "id": "c36bce1e-254f-42b4-b5ea-c62da8b807ee"
     }
   ]
 }

@@ -3,13 +3,16 @@
     --background-color: #e3e1e1;
     --background-product: #ffffff;
     --primary-color: #024252;
-    --secondary-color: #1472ea;
+    --secondary-color: #0071ea; 
+    --third-color: #d6eaff;
     --primary-shadow: #C1C1C1;
     --bottom-margin: 0.5rem;
     --bottom-margin-2: 1rem;
-    --warning-color: red;
+    --sucess-color: #047900;
+    --warning-color: #df2525;
     --line-height: 1.7rem;
     --transition: 0.3s;
+    --transparency-color: #4d4d4d33;
     --oscuro:#2c2c2c;
     --oscuro-1: #3b3b3d;
     --sombraDark: 4px 4px 5px 5px rgba(170,170,170,.25);
@@ -42,6 +45,19 @@ body.dark {
 .dark .footer {
     color: #fff;
 }
+.flex {
+    display: flex;
+  }
+  
+.flex--center {
+align-items: center;
+justify-content: center;
+}
+
+.flex--column {
+flex-direction: column;
+}
+
 .container {
     width: 100%;
     display: grid;

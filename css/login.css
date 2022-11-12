@@ -1,7 +1,8 @@
 .container-login {
     background: var(--background-product);
+    border-radius: 5px;
     grid-column: 2/4;
-    margin: 2rem;
+    margin: 3.5rem;
     
 }
 .form-control {
@@ -9,7 +10,14 @@
     flex-direction: column;
     align-items: center;
 }
-.button {
-    margin: 2rem;
-    width: 175px;
+.titulo {
+    margin-bottom: 2.5rem;
+}
+.form-control__input {
+    border: none;
+    border-bottom: 1px solid var(--primary-shadow);
+    height: 2rem;
+    margin: .5rem;
+    text-align: start;
+    width: 190px;
 }

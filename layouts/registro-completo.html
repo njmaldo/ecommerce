@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -5,14 +7,14 @@
     <meta class="header__enlace" http-equiv="X-UA-Compatible" content="IE=edge">
     <meta class="header__enlace" name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Css -->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="/css/main.css">
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
-    <title>Ecommerce</title>
+    <title>Ecommerce - Login</title>
 </head>
 <body>
     <section class="container" id="index">
@@ -24,12 +26,12 @@
             </div>
             <div class="header__top-contact-bg"></div>
             <nav class="header__navbar">
-                <img  class="logo" src="images/logo.png" alt="Nestor J. Maldonado">
+                <img  class="logo" src="/images/logo.png" alt="Nestor J. Maldonado">
                 <ul class="header__menu" id="menu">
-                    <a class="header__enlace " href="index.html">Inicio</a>
+                    <a class="header__enlace " href="/index.html">Inicio</a>
                     <a class="header__enlace " href="#productos">Productos</a>
-                    <a class="header__enlace " href="/layouts/clientes.html">Clientes</a>
-                    <a class="header__enlace " href="/layouts/login.html">Login</a>
+                    <a class="header__enlace " href="./clientes.html">Clientes</a>
+                    <a class="header__enlace " href="./login.html">Login</a>
                     <a href="#" class="button__search" id="button__search">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </a>   
@@ -56,51 +58,27 @@
                 <input type="text">
             </section>
             <!-- End Banner -->
-            <section class="product">
-                <h2 class="product__title">Ofertas</h2>
-                <div class="product__card">
-                    <div class="product__img">
-                        <img src="/images/producto-2.jpeg" alt="">
-                    </div>
-                    <div class="product__detail">
-                        <h3 class="product__detail-title"><a href="#">Producto 1</a></h3>
-                        <p class="product__detail-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        <ul>
-                            <li class="product__detail-icon"><a href="#!"><i class="fa fa-heart"></i></a> </li>
-                            <li class="product__detail-icon"><a href="#!"><i class="fa-solid fa-cart-plus"></i></a> </li>
-                        </ul>
-                    </div>
-                    <button class="button"><span>Comprar</span></button>
-                </div>
-                <div class="product__card">
-                    <div class="product__img">
-                        <img src="/images/producto-2.jpeg" alt="">
-                    </div>
-                    <div class="product__detail">
-                        <h3 class="product__detail-title"><a href="#">Producto 1</a></h3>
-                        <p class="product__detail-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        <ul>
-                            <li class="product__detail-icon"><a href="#!"><i class="fa fa-heart"></i></a> </li>
-                            <li class="product__detail-icon"><a href="#!"><i class="fa-solid fa-cart-plus"></i></a> </li>
-                        </ul>
-                    </div>
-                    <button class="button"><span>Comprar</span></button>
-                </div>
+            <!-- Registro Completo-->
+            <section class="register-card card">
+                <span class="register-card__icon-complete"></span>
+                <h1 class="register-card__title titulo">¡Registro completo!</h1>
+                <a href="./clientes.html" class="button"><span>Ver clientes</span></a>
+              </section>
+            <!--End Registro completo -->
             </section>
-            
         </main>
         <!-- End Main -->
          <!-- Section Footer -->
-         <footer class="footer" id="footer" >
+        <footer class="footer" id="footer" >
             <div class="footer_logo">
-                <img src="images/logo.png" alt="logo" />
+                <img src="/images/logo.png" alt="logo" />
             </div>
             <div class="footer__link">
                 <ul>
                     <a href="/index.html">Inicio</a>
                     <a href="#">Productos</a>
-                    <a href="/layouts/clientes.html">Clientes</a>
-                    <a href="/layouts/login.html">Login</a>
+                    <a href="./clientes.html">Clientes</a>
+                    <a href="./login.html">Login</a>
                     <a href="#" class="button__search" id="button__search">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </a>
@@ -126,6 +104,8 @@
         </footer>
 	    <!-- End Footer -->
     </section>
-<script src="buttons.js"></script>
+
+<script src="/buttons.js"></script>
 </body>
 </html>
+

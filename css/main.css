@@ -2,9 +2,16 @@
 
 @import 'reset.css';
 @import 'bases.css';
+@import 'inputs.css';
 @import 'header.css';
 @import 'contenido.css';
 @import 'productos.css';
 @import 'footer.css';
 @import 'dark.css';
 @import 'login.css';
+@import 'clientes.css';
+@import 'table.css';
+@import 'card.css';
+@import 'registro-completo.css';
+@import 'errors.css';
+@import 'modal.css';

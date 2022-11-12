@@ -30,8 +30,8 @@
                 <ul class="header__menu" id="menu">
                     <a class="header__enlace " href="/index.html">Inicio</a>
                     <a class="header__enlace " href="#productos">Productos</a>
-                    <a class="header__enlace " href="#about">Nosotros</a>
-                    <a class="header__enlace " href="/html/login.html">Login</a>
+                    <a class="header__enlace " href="./clientes.html">clientes</a>
+                    <a class="header__enlace " href="./login.html">Login</a>
                     <a href="#" class="button__search" id="button__search">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </a>   
@@ -56,16 +56,38 @@
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, ipsum.</p>
                 </div>
                 <input type="text">
-            </section>
+            </section>  
             <!-- End Banner -->
-            <section class="container-login">
-                <form class="form-control">
-                    <h2 class="titulo">Iniciar Sesión</h2>
-                    <input type="text" name="usuario" placeholder="Escriba su correo electrónico">
-                    <input type="password" name="clave" placeholder="Escriba su contraseña">
-                    <button class="button" type="submit" name="entrar">Entrar</button>
-                </form>
+            <!-- Clientes -->
+            <section class="clientes-container">
+                <table class="table">
+                    <thead>
+                        <tr>
+                        <th class="table__column--p">Nombre</th>
+                        <th class="table__column--g">Email</th>
+                        <th class="table__column--m table__align--right">
+                          <a href="./registro-clientes.html"
+                             class="button button--add"><span>Nuevo Cliente</span></a>
+                        </th>
+                        </tr>
+                    </thead>
+                    <tbody data-table></tbody>
+                </table>
+                <div class="modal-container modal--close">
+                <article class="modal">
+                    <h2 class="modal__title">Eliminar</h2>
+                    <button class="modal__close">X</button>
+                    <p class="modal__text">¿Deseas continuar?</p>
+                    <div class="modal__button-container">
+                    <button class="modal__button modal__button--confirm">
+                        Eliminar
+                    </button>
+                    <button class="modal__button">No eliminar</button>
+                    </div>
+                </article>
+                </div>
             </section>
+            <!--End clientes -->
         </main>
         <!-- End Main -->
          <!-- Section Footer -->
@@ -75,10 +97,10 @@
             </div>
             <div class="footer__link">
                 <ul>
-                    <a href="#">Inicio</a>
+                    <a href="index.html">Inicio</a>
                     <a href="#">Productos</a>
-                    <a href="#">Nosotros</a>
-                    <a href="#">Login</a>
+                    <a href="./clientes.html">Clientes</a>
+                    <a href="./login.html">Login</a>
                     <a href="#" class="button__search" id="button__search">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </a>
@@ -104,6 +126,7 @@
         </footer>
 	    <!-- End Footer -->
     </section>
+<script src="/controllers/client-controller.js" type="module"></script>
 <script src="/buttons.js"></script>
 </body>
 </html>
