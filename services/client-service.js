@@ -1,5 +1,6 @@
+import { environment } from'../environments/environment.js'
 
-const url = 'http://localhost:3000/perfil';
+const url = environment.url;
 
 
 const listaClientes = () => fetch(`${url}`)

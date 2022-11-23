@@ -1,4 +1,6 @@
-const url = 'http://localhost:3000/productos';
+import { environment } from'../environments/environment.js'
+
+const url = environment.url;
 
 //Get all Products
 const listaProductos = () => fetch(`${url}`)
