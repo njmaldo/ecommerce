@@ -1,9 +1,11 @@
 .formulario {
     margin-top: 2rem;
 }
-.formulario__legenda {
-    font-size: 22px;
-    margin-bottom: 1rem;
+.form__label {
+    font-size: 18px;
+    margin: 1rem 0rem 1rem 0rem;
+    padding: 0.5rem;
+    /* border-bottom: 1px solid var(--primary-shadow); */
 }
 .input-container {
     font-weight: 300;
@@ -13,6 +15,10 @@
     flex-direction: column;
     justify-content: flex-end;
     box-sizing: border-box;
+}
+.input-container img {
+    width: 70px;
+    height: 70px;
 }
 .input {
     box-sizing: border-box;
@@ -32,7 +38,7 @@
     position: absolute;
     top: 1.375rem;
     left: 0.5rem;
-    font-size: 20px;
+    font-size: 18px;
     transition: all 0.25s;
 }
 .input:not(:placeholder-shown)+.input-label,
@@ -41,20 +47,23 @@
     top: 0.25rem;
     transition: all 0.25s;
 }
-.input-container--invalido {
+.input-container--invalid {
     margin-bottom: 0.5rem;
 }
-.input-container--invalido .input {
+.input-container--invalid .input {
     border: 1px solid var(--warning-color);
-    border-radius: 7px;
+    border-radius: 5px;
 }
-.input-container--invalido .input-label {
+.input-container--invalid .input-label {
     color: var(--warning-color);
 }
-.input-menssage-error {
+.input-message-error {
     display: none;
 }
-.input-container--invalido .input-menssage-error {
+.input-img {
+    align-items: center;
+}
+.input-container--invalid .input-message-error {
     color: var(--warning-color);
     display: block;
     margin-top: 0.5rem;
@@ -62,9 +71,10 @@
 }
 .textarea {
     box-sizing: border-box;
-    border: 1px solid var(--secondary-color);
+    border: 1px solid var(--primary-shadow);
     padding: 0.5rem;
-    border-radius: 7px;
+    margin-top: 1rem;
+    border-radius: 5px;
     width: 100%;
     min-height: 3rem;
 }
@@ -89,23 +99,23 @@
 }
 .textarea:not(:placeholder-shown)+.textarea-label,
 .textarea:focus+.textarea-label {
-    font-size: 0.875rem;
-    top: -1.25rem;
+    font-size: 18px;
+    top: -0.6rem;
     transition: all 0.25s;
 }
-.textarea-container--invalido {
+.textarea-container--invalid {
     margin-bottom: 0.5rem;
 }
-.textarea-container--invalido .textarea {
+.textarea-container--invalid .textarea {
     border: 1px solid var(--warning-color);
 }
-.textarea-container--invalido .textarea-label {
+.textarea-container--invalid .textarea-label {
     color: var(--warning-color);
 }
-.textarea-menssage-error {
+.textarea-message-error {
     display: none;
 }
-.textarea-container--invalido .textarea-menssage-error {
+.textarea-container--invalid .textarea-message-error {
     display: block;
     color: var(--warning-color);
     margin-top: 0.5rem;

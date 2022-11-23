@@ -14,6 +14,9 @@
     padding: 1.75rem;
     width: 100%;
   }
+  .card__titulo {
+    margin-bottom: 2.5rem;
+  }
   .input {
     border: none;
     box-sizing: border-box;
@@ -22,20 +25,3 @@
     padding: 1.375rem 0.5rem 0.5rem;
     width: 100%;
 }
-  
-/* .input-container {
-    box-sizing: border-box;
-    display: flex;
-    font-weight: 300;
-    flex-direction: column;
-    justify-content: flex-end;
-    margin-bottom: 1rem;
-    position: relative;
-}
-.input-label {
-    position: absolute;
-    top: 1.375rem;
-    left: 0.5rem;
-    font-size: 20px;
-    transition: all 0.25s;
-} */

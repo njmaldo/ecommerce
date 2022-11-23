@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta class="header__enlace" charset="UTF-8">
+    <meta class="header__enlace" http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta class="header__enlace" name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Css -->
     <link rel="stylesheet" href="css/main.css">
     <!-- Google Font -->
@@ -31,6 +31,23 @@
             </div>    
             <nav class="header__navbar">
                 <img  class="logo" src="images/logo.png" alt="Nestor J. Maldonado">
+                <ul class="header__menu" id="menu">
+                    <a class="header__enlace " href="index.html">Inicio</a>
+                    <a class="header__enlace " href="/layouts/productos.html">Productos</a>
+                    <a class="header__enlace " href="/layouts/clientes.html">Clientes</a>
+                    <a class="header__enlace " href="/layouts/login.html">Login</a>
+                    <a href="#" class="button__search" id="button__search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>   
+                </ul>
+                <div class="search__div" id="search__hide">
+                    <input class="search__input" 
+                           id="search__input" 
+                           type="text" 
+                           placeholder="Qué deseas buscar?">
+                    <!-- <button id="button">buscar</button> -->
+                    <ul class="resultado" id="resultado"></ul>
+                </div>
                 <button class="header__switch" id="switch">
                     <span><i class="fas fa-sun fa-xl"></i></span>
                     <span><i class="fas fa-moon fa-xl"></i></span>
@@ -47,9 +64,9 @@
                     <div class="contenido__text-center">
                         <h2>Mi Farma</h2>
                         <p class="contenido__text-desc">Hasta 50% de ahorro en la linea One Touch Select Plus</p>
-                        <a href="/layouts/login.html" 
+                        <a href="index-2.html" 
                            type="button" 
-                           class="btn button"><span>Login</span></a>
+                           class="btn button"><span>Ver productos</span></a>
                     </div>
                 </div>
             </section>
@@ -184,7 +201,14 @@
             <div class="footer_logo">
                 <img src="images/logo.png" alt="logo" />
             </div>
-
+            <div class="footer__link">
+                <ul>
+                    <a href="/index.html">Inicio</a>
+                    <a href="/layouts/productos.html">Productos</a>
+                    <a href="/layouts/clientes.html">Clientes</a>
+                    <a href="/layouts/login.html">Login</a>
+                </ul>
+            </div>
             <div class="social-icons">
                 <a class="arrow-up" href="#index" >
                     <i class="fa-solid fa-arrow-up fa-xl"></i></a>
@@ -205,6 +229,7 @@
         </footer>
 	    <!-- End Footer -->
     </section>
+<script src="js/buttons.js"></script>
 <script src="/controllers/nuevo-producto.js" type="module"></script>
 <script src="/js/app.js" type="module"></script>
 </body>

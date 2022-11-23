@@ -1,4 +1,4 @@
-import { clientServices } from '../services/service.js';
+import { clientServices } from '../services/client-service.js';
 
 const formulario = document.querySelector('[data-form]');
 
@@ -32,7 +32,7 @@ formulario.addEventListener('submit', (evento) => {
     const email = document.querySelector('[data-email]').value;
     clientServices.actualizarCliente(nombre,email,id)
                   .then(() => {
-                    window.location.href = '/layouts/edicion-completa.html';
+                    window.location.href = '/layouts/cliente-editado.html';
                   });
 
 })

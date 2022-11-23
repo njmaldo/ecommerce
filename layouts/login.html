@@ -27,15 +27,6 @@
             <div class="header__top-contact-bg"></div>
             <nav class="header__navbar">
                 <img  class="logo" src="/images/logo.png" alt="Nestor J. Maldonado">
-                <ul class="header__menu" id="menu">
-                    <a class="header__enlace " href="/index.html">Inicio</a>
-                    <a class="header__enlace " href="#productos">Productos</a>
-                    <a class="header__enlace " href="./clientes.html">Clientes</a>
-                    <a class="header__enlace " href="./login.html">Login</a>
-                    <a href="#" class="button__search" id="button__search">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </a>   
-                </ul>
                 <div class="search__div" id="search__hide">
                     <input class="search__input" type="text" placeholder="Qué deseas buscar?">
                 </div>
@@ -52,47 +43,62 @@
             <!-- Banner -->
             <section class="contenido__banner">
                 <div class="contenido__overlay">
-                    <h2 class="contenido__text-center">Ecommerce</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, ipsum.</p>
+                    <div class="contenido__text-center">
+                        <h2>Mi Farma</h2>
+                        <p class="contenido__text-desc">Hasta 50% de ahorro en la linea One Touch Select Plus.</p>
+                        <a href="/index.html" 
+                           type="button" 
+                           class="btn button"><span>Ver productos</span></a>
+                    </div>
                 </div>
-                <input type="text">
             </section>
             <!-- End Banner -->
             <!-- Login -->
-            <section class="container-login">
-                <form class="form-control">
+            <section class="login">
+                <div class="container-login">
                     <h2 class="titulo">Iniciar Sesión</h2>
-                    <input class="form-control__input" 
-                           type="text" 
-                           name="usuario" 
-                           placeholder="Correo electrónico">
-                    <input class="form-control__input" 
-                           type="password" 
-                           name="clave" 
-                           placeholder="Contraseña">
-                    <button class="button" 
-                            type="submit" 
-                            name="ingresar"><span>Ingresar</span></button>
-                </form>
+                    <form action="../index-2.html" method="#" class="form-control" data-form>
+                        <fieldset>
+                            <legend class="form__label">Ingresa tus credenciales</legend>
+                            <div class="input-container">
+                                <input name="email" 
+                                       id="email" 
+                                       class="input" 
+                                       type="email" 
+                                       placeholder="Email" 
+                                       required
+                                       data-tipo="email">
+                                <label class="input-label" for="email">Email</label>
+                                <span class="input-message-error">Este campo es requerido</span>
+                            </div>
+                            <div class="input-container">
+                                <input name="password" 
+                                       id="password" 
+                                       class="input" 
+                                       type="password" 
+                                       placeholder="Contraseña" 
+                                       pattern="^(?=.*\d).{4,8}$"
+                                       title="La contraseña debe tener entre 4 y 8 dígitos e incluir al menos un dígito numérico."
+                                       data-tipo="password"
+                                       data-pass
+                                       required>
+                                <label class="input-label" for="password">Password</label>
+                                <span class="input-message-error">Este campo es requerido</span>
+                            </div>
+                        </fieldset>
+                        <button class="btn button" 
+                                type="submit" 
+                                name="ingresar"><span>Ingresar</span></button>
+                    </form>
+                </div>
                 <!--End Login -->
             </section>
         </main>
         <!-- End Main -->
-         <!-- Section Footer -->
-         <footer class="footer" id="footer" >
+        <!-- Section Footer -->
+        <footer class="footer" id="footer" >
             <div class="footer_logo">
                 <img src="/images/logo.png" alt="logo" />
-            </div>
-            <div class="footer__link">
-                <ul>
-                    <a href="/index.html">Inicio</a>
-                    <a href="#">Productos</a>
-                    <a href="./clientes.html">Clientes</a>
-                    <a href="./login.html">Login</a>
-                    <a href="#" class="button__search" id="button__search">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </a>
-                </ul>
             </div>
             <div class="social-icons">
                 <a class="arrow-up" href="#index" >
@@ -103,7 +109,7 @@
                 <a  href="https://github.com/njmaldo"><i class="fa-brands fa-github fa-xl" aria-hidden="true"></i></a>
                 <a  href="https://t.me/NestorJMaldo"><i class="fa-brands fa-telegram fa-xl" aria-hidden="true"></i></a>       
             </div>
-            <div class="footer_line"></div>
+            <div class="line"></div>
             <div class="text-center">
                 <p>&copy Néstor J. Maldonado - 2022 Todos los derechos reservados.</p>
             </div>
@@ -114,7 +120,8 @@
         </footer>
 	    <!-- End Footer -->
     </section>
-<script src="/buttons.js"></script>
+<script src="/js/app.js" type="module"></script>
+<script src="/js/buttons.js"></script>
 </body>
 </html>
 

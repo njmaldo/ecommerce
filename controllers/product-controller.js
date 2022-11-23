@@ -1,18 +1,18 @@
-import { clientServices } from "../services/client-service.js";
+import { productServices } from "../services/product-service.js";
 
-const crearNuevaLinea = (nombre,email,id) => {
+const crearNuevaLinea = (nombre,precio,imgUrl,desc,id) => {
     const linea = document.createElement('tr');
     const contenido =  `
         <td class="td" data-td>
-        ${nombre}
-        </td>
-        <td>
-        ${email}
-        </td>
+            ${nombre}</td>
+        <td>${precio}</td>
+        <td>${desc}</td>
+        <td><img src="${imgUrl}" width="50px" height="50px" alt=""></td>
+        
         <td>
             <ul class="table__button-control">
             <li>
-                <a href="../layouts/editar-cliente.html?id=${id}"
+                <a href="../layouts/editar-producto.html?id=${id}"
                    class="simple-button simple-button--edit">
                    <i class="fa-solid fa-pen-to-square" style="color:#0071ea"></i></a>
             </li>
@@ -30,7 +30,7 @@ const crearNuevaLinea = (nombre,email,id) => {
     const btn = linea.querySelector('button');
     btn.addEventListener('click', () => {
         const id = btn.id;
-        clientServices.eliminarCliente(id)
+        productServices.eliminarProducto(id)
                       .then(res => res)
                       .catch(err => alert(err,'¡Ups! Ocurrio un error...'));
     });
@@ -38,9 +38,11 @@ const crearNuevaLinea = (nombre,email,id) => {
 }
 const table = document.querySelector('[data-table]');
 
-clientServices.listaClientes().then((data) => {
-    data.forEach( ({nombre,email,id}) => {
-        const nuevaLinea = crearNuevaLinea(nombre,email,id);
+productServices.listaProductos().then((data) => {
+    data.forEach( ({ nombre,precio,imgUrl,desc,id }) => {
+        const nuevaLinea = crearNuevaLinea(nombre,precio,imgUrl,desc,id);
         table.appendChild(nuevaLinea);
     });
 }).catch((err) => alert(err,'¡Ups! Ocurrio un error...'));
+
+

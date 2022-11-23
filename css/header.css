@@ -52,6 +52,11 @@
     position: relative;
     top: -19px;
 }
+.top_links {
+    position: relative;
+    top: 1rem;
+    left: 3.5rem;
+}
 .header__menu {
     grid-column: 6/12;
     display: flex;
@@ -60,9 +65,7 @@
 .header__menu li {
     list-style: none;
 }
-.dark .header__menu{
-    color: #fff;
-}
+
 .header__enlace {
     text-decoration: none;
     cursor: pointer;
@@ -71,9 +74,7 @@
 .header__enlace .active:hover {
     color: #dedede;
 }
-.header__menu a:hover {
-    color: #fff;
-}
+
 .search__div {
     display: none;
 }
@@ -110,9 +111,9 @@
         display: grid;
         position: absolute;
         align-items: center;
-        width: 100%;
+        width: 80%;
         height: 54vh;
-        margin-top: 38.6em;
+        margin-top: 38.9em;
         background-color: #cccccc;
         transform: translateX(170%);
         transition: all 600ms;
@@ -129,9 +130,16 @@
 }
 @media screen and (max-width: 375px) {
     .header__menu {
-        margin-top: 27em;
+        margin-top: 28em;
     }
     .header__navbar .menu_toggle {
-        transform: translateX(50%);
+        transform: translateX(65%);
+    }
+    .footer__link {
+        display: none;
+    }
+    .show {
+        grid-column: 2/3;
+        grid-row: 2/3;
     }
 }

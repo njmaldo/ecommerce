@@ -5,13 +5,13 @@ const url = 'http://localhost:3000/perfil';
 const listaClientes = () => fetch(`${url}`)
                             .then(res => res.json());
 //Create
-const crearCliente = (nombre,email) => {
+const crearCliente = (nombre,email,password) => {
     return fetch(`${url}`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({nombre,email,id: uuid.v4()})
+            body: JSON.stringify({nombre,email,password,id: uuid.v4()})
     });
 }
 //Delete

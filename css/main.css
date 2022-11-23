@@ -6,6 +6,7 @@
 @import 'header.css';
 @import 'contenido.css';
 @import 'productos.css';
+@import 'contacto.css';
 @import 'footer.css';
 @import 'dark.css';
 @import 'login.css';
@@ -14,4 +15,3 @@
 @import 'card.css';
 @import 'registro-completo.css';
 @import 'errors.css';
-@import 'modal.css';

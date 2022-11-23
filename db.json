@@ -1,8 +1,8 @@
 {
   "perfil": [
     {
-      "nombre": "Silvina",
-      "email": "silvana@alura",
+      "nombre": "Silvina Garcia ",
+      "email": "silvana@gmail.com.ar",
       "id": "f857bd89-c5c5-40d6-917e-4e81809f7f81"
     },
     {
@@ -12,13 +12,36 @@
     },
     {
       "nombre": "Ivanna Strack",
-      "email": "ivanna@cosa.com",
+      "email": "ivanna@married.com",
       "id": "21253559-8bb0-4fe9-81ec-f4530e00685f"
     },
     {
-      "nombre": "Edith nieto",
-      "email": "edith@nieto3.com",
-      "id": "c36bce1e-254f-42b4-b5ea-c62da8b807ee"
+      "nombre": "Aylen R. Maldonado",
+      "email": "aylen-m@gmail.com",
+      "id": "52af343b-f28a-4f0f-8f1a-39cc535ef150"
+    }
+  ],
+  "productos": [
+    {
+      "nombre": " Desodorante Axe",
+      "precio": "$ 550",
+      "imgUrl": "/images/producto-3.jpeg",
+      "desc": "Desodorante en aerosol Axe 330ml",
+      "id": "806305d5-a6ef-4ea7-a47f-a8ca65277b8c"
+    },
+    {
+      "nombre": "Crema dental",
+      "precio": "$349",
+      "imgUrl": "/images/producto-5.jpeg",
+      "desc": "Crema dental generica.                       ",
+      "id": "bc075d4a-2559-4942-a949-f438e933e935"
+    },
+    {
+      "nombre": "Algo",
+      "precio": "$389",
+      "imgUrl": "/images/producto-5.jpeg",
+      "desc": "Algo para el cuerpo",
+      "id": "800d71aa-3ba6-4e3f-86b0-2b57e6aed632"
     }
   ]
 }

@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Ecommerce - Editar Cliente</title>
+    <title>Ecommerce - Editar Producto</title>
 </head>
 
 <body>
@@ -33,7 +33,7 @@
                 <img class="logo" src="/images/logo.png" alt="Nestor J. Maldonado">
                 <ul class="header__menu" id="menu">
                     <a class="header__enlace " href="/index.html">Inicio</a>
-                    <a class="header__enlace " href="#productos">Productos</a>
+                    <a class="header__enlace " href="./productos.html">Productos</a>
                     <a class="header__enlace " href="./clientes.html">clientes</a>
                     <a class="header__enlace " href="./login.html">Login</a>
                     <a href="#" class="button__search" id="button__search">
@@ -68,8 +68,8 @@
             <!-- End Banner -->
             <!--Editar Clientes -->
             <section class="card card-container">
-                <h1 class="titulo">Editar Cliente</h1>
-                <form action="./cliente-editado.html" class="flex flex--column" data-form>
+                <h1 class="card__titulo titulo">Editar Producto</h1>
+                <form action="./producto-editado.html" class="flex flex--column" data-form>
                     <legend class="form__label">Edite los datos necesarios</legend>
                     <fieldset>
                         <div class="input-container">
@@ -85,21 +85,44 @@
                             <span class="input-message-error">Este campo es requerido</span>
                         </div>
                         <div class="input-container">
-                            <input name="email" 
-                                   id="email" 
+                            <input name="precio" 
+                                   id="precio" 
                                    class="input" 
                                    type="text" 
-                                   placeholder="email" 
+                                   placeholder="Precio" 
                                    required
-                                   data-email
-                                   data-tipo="email">
-                            <label class="input-label" for="email">Email</label>
+                                   data-precio
+                                   data-tipo="precio">
+                            <label class="input-label" for="precio">Precio</label>
                             <span class="input-message-error">Este campo es requerido</span>
+                        </div>
+                        <div class="textarea-container register_description-container">
+                            <textarea class="textarea register_description"
+                                      name="description"
+                                      id="description"
+                                      placeholder="Descripción"
+                                      required
+                                      data-desc
+                                      data-tipo="desc">
+                            </textarea>
+                            <label class="textarea-label" for="description">Descripción</label>
+                            <span class="textarea-message-error">Este campo es requerido</span>
+                        </div>
+                        <div class="input-container">
+                            <img name="imagen"
+                                 id="imagen"
+                                 src="" 
+                                 alt=""
+                                 placeholder="Imagen"
+                                 data-img
+                                 data-tipo="img">
+                            <label class="textarea-label" for="imagen">Imagen</label>
+                            <span class="textarea-message-error">Este campo es requerido</span>
                         </div>
                     </fieldset>
                     <button type="submit" 
                             class="btn button">
-                        <span>Editar cliente</span>
+                        <span>Editar producto</span>
                     </button>
                 </form>
             </section>
@@ -139,7 +162,8 @@
         </footer>
 	    <!-- End Footer -->
     </section>
-    <script src="/controllers/editar.cliente.js" type="module"></script>
+    <script src="/controllers/editar-producto.js" type="module"></script>
     <script src="/js/buttons.js"></script>
 </body>
+
 </html>

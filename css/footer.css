@@ -47,14 +47,7 @@
 .footer .social-icons i {
     color: #024252;
 }
-.footer_line {
-    background: #024252;
-    display: block;
-    grid-column: 1/9;
-    height: 1px;
-    opacity: 0.2;
-    margin: 2rem 0 2rem;
-}
+
 .footer .text-right i {
     color: #024252;
 }

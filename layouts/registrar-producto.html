@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
-    <title>Ecommerce - Login</title>
+    <title>Ecommerce - Productos</title>
 </head>
 <body>
     <section class="container" id="index">
@@ -52,58 +52,89 @@
             <!-- Banner -->
             <section class="contenido__banner">
                 <div class="contenido__overlay">
-                    <h2 class="contenido__text-center">Ecommerce</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, ipsum.</p>
+                    <div class="contenido__text-center">
+                        <h2>Mi Farma</h2>
+                        <p class="contenido__text-desc">Hasta 50% de ahorro en la linea One Touch Select Plus.</p>
+                        <a href="#" 
+                           type="button" 
+                           class="btn button"><span>Ver productos</span></a>
+                    </div>
                 </div>
-                <input type="text">
-            </section>  
+            </section>
             <!-- End Banner -->
             <!-- Registro-Clientes -->
             <section class="card card-container">
-                <h1 class="titulo">Nuevo Cliente</h1>
-                <form class="flex flex--column" data-form>
-                <div class="input-container">
-                    <input name="nombre"
-                           id="nombre"
-                           class="input"
-                           type="text"
-                           placeholder="Nombre"
-                           required
-                           data-nombre >
-                    <label class="input-label" for="nombre">Nombre</label>
-                    <span class="input-menssage-error">Este campo es requerido</span>
-                </div>
-                <div class="input-container"> 
-                    <input name="email"
-                           id="email"
-                           class="input"
-                           type="text"
-                           placeholder="email"
-                           required
-                           data-email >
-                    <label class="input-label" for="email">Email</label>
-                    <span class="input-menssage-error">Este campo es requerido</span>
-                </div>
-                <button type="submit" class="button"><span>Registrar</span></button>
+                <h1 class="titulo">Nuevo Producto</h1>
+                <form action="./registro-completo.html" class="flex flex--column" data-form>
+                    <fieldset>
+                        <legend class="form__label">Ingresa los datos del producto</legend>
+                        <div class="input-container">
+                            <input name="nombre"
+                                   id="nombre"
+                                   class="input"
+                                   type="text"
+                                   placeholder="Nombre"
+                                   required
+                                   data-nombre
+                                   data-tipo="nombre">
+                            <label class="input-label" for="nombre">Nombre</label>
+                            <span class="input-message-error">Este campo es requerido</span>
+                        </div>
+                        <div class="input-container"> 
+                            <input name="precio"
+                                   id="precio"
+                                   class="input"
+                                   type="precio"
+                                   placeholder="Precio"
+                                   required
+                                   data-precio
+                                   data-tipo="precio" >
+                            <label class="input-label" for="price">Precio</label>
+                            <span class="input-message-error">Este campo es requerido</span>
+                        </div>
+                        <div class="textarea-container register_description-container">
+                        <textarea class="textarea register_description"
+                                  name="description"
+                                  id="description"
+                                  placeholder="Descripción"
+                                  data-desc
+                                  data-tipo="textarea">
+                        </textarea>
+                        <label class="textarea-label" for="description">Descripción</label>
+                        <span class="textarea-message-error">Este campo es requerido</span>
+                    </div>
+                    <div class="input-container">
+                        <input name="img"
+                               id="img"
+                               class="input"
+                               type="text"
+                               placeholder="Imagen"
+                               data-img
+                               data-tipo="img" >
+                        <label class="input-label" for="img">Imagen</label>
+                        <span class="input-message-error">Este campo es requerido</span>
+                    </div>
+                    </fieldset>
+                    <button type="submit" 
+                            class="btn button">
+                        <span>Registrar</span>
+                    </button>
                 </form>
             </section>
             <!--End Registro-clientes -->
         </main>
         <!-- End Main -->
-         <!-- Section Footer -->
-         <footer class="footer" id="footer" >
+        <!-- Section Footer -->
+        <footer class="footer" id="footer" >
             <div class="footer_logo">
                 <img src="/images/logo.png" alt="logo" />
             </div>
             <div class="footer__link">
                 <ul>
                     <a href="/index.html">Inicio</a>
-                    <a href="#">Productos</a>
+                    <a href="/layouts/productos.html">Productos</a>
                     <a href="/layouts/clientes.html">Clientes</a>
                     <a href="/layouts/login.html">Login</a>
-                    <a href="#" class="button__search" id="button__search">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </a>
                 </ul>
             </div>
             <div class="social-icons">
@@ -115,7 +146,7 @@
                 <a  href="https://github.com/njmaldo"><i class="fa-brands fa-github fa-xl" aria-hidden="true"></i></a>
                 <a  href="https://t.me/NestorJMaldo"><i class="fa-brands fa-telegram fa-xl" aria-hidden="true"></i></a>       
             </div>
-            <div class="footer_line"></div>
+            <div class="line"></div>
             <div class="text-center">
                 <p>&copy Néstor J. Maldonado - 2022 Todos los derechos reservados.</p>
             </div>
@@ -128,7 +159,8 @@
     </section>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="/controllers/registro.controller.js" type="module"></script>
-<script src="/buttons.js"></script>
+<script src="/js/app.js" type="module"></script>
+<script src="/js/buttons.js"></script>
 </body>
 </html>
 

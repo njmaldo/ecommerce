@@ -6,7 +6,7 @@ let searchDiv = document.getElementById('search__hide');
 
 menu_bar.addEventListener('click', () => {
     menu.classList.toggle('menu_toggle');
-    setTimeout(toggle, 5000);
+    // setTimeout(toggle, 5000);
 });
 const toggle = () => {
     location.reload();

@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
-    <title>Ecommerce - Login</title>
+    <title>Ecommerce - Clientes</title>
 </head>
 <body>
     <section class="container" id="index">
@@ -29,7 +29,7 @@
                 <img  class="logo" src="/images/logo.png" alt="Nestor J. Maldonado">
                 <ul class="header__menu" id="menu">
                     <a class="header__enlace " href="/index.html">Inicio</a>
-                    <a class="header__enlace " href="#productos">Productos</a>
+                    <a class="header__enlace " href="./productos.html">Productos</a>
                     <a class="header__enlace " href="./clientes.html">clientes</a>
                     <a class="header__enlace " href="./login.html">Login</a>
                     <a href="#" class="button__search" id="button__search">
@@ -52,11 +52,15 @@
             <!-- Banner -->
             <section class="contenido__banner">
                 <div class="contenido__overlay">
-                    <h2 class="contenido__text-center">Ecommerce</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, ipsum.</p>
+                    <div class="contenido__text-center">
+                        <h2>Mi Farma</h2>
+                        <p class="contenido__text-desc">Hasta 50% de ahorro en la linea One Touch Select Plus.</p>
+                        <a href="/index-2.html" 
+                           type="button" 
+                           class="btn button"><span>Ver productos</span></a>
+                    </div>
                 </div>
-                <input type="text">
-            </section>  
+            </section>
             <!-- End Banner -->
             <!-- Clientes -->
             <section class="clientes-container">
@@ -66,44 +70,29 @@
                         <th class="table__column--p">Nombre</th>
                         <th class="table__column--g">Email</th>
                         <th class="table__column--m table__align--right">
-                          <a href="./registro-clientes.html"
-                             class="button button--add"><span>Nuevo Cliente</span></a>
+                          <a href="./registrar-clientes.html"
+                             class="button button--add">
+                            <span>Nuevo Cliente</span></a>
                         </th>
                         </tr>
                     </thead>
                     <tbody data-table></tbody>
                 </table>
-                <div class="modal-container modal--close">
-                <article class="modal">
-                    <h2 class="modal__title">Eliminar</h2>
-                    <button class="modal__close">X</button>
-                    <p class="modal__text">¿Deseas continuar?</p>
-                    <div class="modal__button-container">
-                    <button class="modal__button modal__button--confirm">
-                        Eliminar
-                    </button>
-                    <button class="modal__button">No eliminar</button>
-                    </div>
-                </article>
-                </div>
             </section>
             <!--End clientes -->
         </main>
         <!-- End Main -->
          <!-- Section Footer -->
-         <footer class="footer" id="footer" >
+        <footer class="footer" id="footer" >
             <div class="footer_logo">
                 <img src="/images/logo.png" alt="logo" />
             </div>
             <div class="footer__link">
                 <ul>
-                    <a href="index.html">Inicio</a>
-                    <a href="#">Productos</a>
-                    <a href="./clientes.html">Clientes</a>
-                    <a href="./login.html">Login</a>
-                    <a href="#" class="button__search" id="button__search">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </a>
+                    <a href="/index.html">Inicio</a>
+                    <a href="/layouts/productos.html">Productos</a>
+                    <a href="/layouts/clientes.html">Clientes</a>
+                    <a href="/layouts/login.html">Login</a>
                 </ul>
             </div>
             <div class="social-icons">
@@ -115,7 +104,7 @@
                 <a  href="https://github.com/njmaldo"><i class="fa-brands fa-github fa-xl" aria-hidden="true"></i></a>
                 <a  href="https://t.me/NestorJMaldo"><i class="fa-brands fa-telegram fa-xl" aria-hidden="true"></i></a>       
             </div>
-            <div class="footer_line"></div>
+            <div class="line"></div>
             <div class="text-center">
                 <p>&copy Néstor J. Maldonado - 2022 Todos los derechos reservados.</p>
             </div>
@@ -127,7 +116,7 @@
 	    <!-- End Footer -->
     </section>
 <script src="/controllers/client-controller.js" type="module"></script>
-<script src="/buttons.js"></script>
+<script src="/js/buttons.js"></script>
 </body>
 </html>
 
