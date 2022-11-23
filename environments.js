@@ -1,6 +1,6 @@
 export const environment = {
     production: true,
-    url: process.env.DATABASE_URL
+    url: 'https://ecommerce-serv-app.herokuapp.com/'
 };
 export const development = {
     production: false,
