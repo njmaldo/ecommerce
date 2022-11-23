@@ -3,11 +3,11 @@ import { environment } from'../environments/environment.js'
 const url = environment.url;
 
 //Get all Products
-const listaProductos = () => fetch(`${url}`)
+const listaProductos = () => fetch(`${url}/productos`)
                              .then(res => res.json());
 //Create
 const crearProducto = (nombre,precio,imgUrl,desc) => {
-    return fetch(`${url}`, {
+    return fetch(`${url}/productos`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -17,18 +17,18 @@ const crearProducto = (nombre,precio,imgUrl,desc) => {
 }
 //Delete
 const eliminarProducto = (id) => {
-    return fetch(`${url}/${id}`, {
+    return fetch(`${url}/productos/${id}`, {
         method: 'delete'
     });
 }
 
 const detalleProducto = (id) => {
-    return fetch(`${url}/${id}`)
+    return fetch(`${url}/productos/${id}`)
            .then(res => res.json());
 }
 //update
 const actualizarProducto = (nombre,precio,imgUrl,desc,id) => {
-    return fetch(`${url}/${id}`, {
+    return fetch(`${url}/productos/${id}`, {
         method: 'PUT',
         headers: {
             'Content-type': 'application/json'

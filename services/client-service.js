@@ -1,9 +1,9 @@
 import { environment } from'../environments/environment.js'
 
 const url = environment.url;
+console.log(url);
 
-
-const listaClientes = () => fetch(`${url}`)
+const listaClientes = () => fetch(`${url}/perfil`)
                             .then(res => res.json());
 //Create
 const crearCliente = (nombre,email,password) => {
@@ -17,18 +17,18 @@ const crearCliente = (nombre,email,password) => {
 }
 //Delete
 const eliminarCliente = (id) => {
-    return fetch(`${url}/${id}`, {
+    return fetch(`${url}/perfil/${id}`, {
         method: 'delete'
     });
 }
 
 const detalleCliente = (id) => {
-    return fetch(`${url}/${id}`)
+    return fetch(`${url}/perfil/${id}`)
            .then(res => res.json());
 }
 //update
 const actualizarCliente = (nombre,email,id) => {
-    return fetch(`${url}/${id}`, {
+    return fetch(`${url}/perfil/${id}`, {
         method: 'PUT',
         headers: {
             'Content-type': 'application/json'
