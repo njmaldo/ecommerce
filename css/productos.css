@@ -19,15 +19,12 @@
 .product__card:hover {
     box-shadow: var(--sombraDark);
 }
-
-/* .product__detail-discount {
-    font-size: 15px;
-    color: aqua;
-    padding: 1rem;
-} */
 .product__img {
     padding: 1rem;
-    width: 100%;
+}
+.product__img img {
+    width: 200px;
+    height: 200px;
 }
 .product__img:hover {
     transform: scale(1.1);

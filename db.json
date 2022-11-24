@@ -11,14 +11,15 @@
       "id": "512423c5-fa31-459a-af93-0f37be388332"
     },
     {
-      "nombre": "Ivanna Strack",
-      "email": "ivanna@married.com",
-      "id": "21253559-8bb0-4fe9-81ec-f4530e00685f"
-    },
-    {
       "nombre": "Aylen R. Maldonado",
       "email": "aylen-m@gmail.com",
       "id": "52af343b-f28a-4f0f-8f1a-39cc535ef150"
+    },
+    {
+      "nombre": "Ivanna Strack",
+      "email": "ivannaS@gmail.com",
+      "password": "Ivana22",
+      "id": "f98da090-b7ca-4068-906c-9faf99584099"
     }
   ],
   "productos": [

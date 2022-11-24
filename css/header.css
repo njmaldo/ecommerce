@@ -97,6 +97,7 @@
 .header__menu-bar {
     display: none;
 }
+
 @media screen and (max-width: 768px) {
     .header__top-contact {
         padding: 2.5rem 0rem 0.5rem 1.5rem;   

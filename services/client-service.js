@@ -1,13 +1,12 @@
 import { environment } from'../environments/environment.js'
 
 const url = environment.url;
-console.log(url);
 
 const listaClientes = () => fetch(`${url}/perfil`)
                             .then(res => res.json());
 //Create
 const crearCliente = (nombre,email,password) => {
-    return fetch(`${url}`, {
+    return fetch(`${url}/perfil`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
