@@ -1,4 +1,3 @@
-// import { environmentProd } from'../environments/environments.prod.js'
 
 const url = 'https://ecommerce-serv-app.herokuapp.com/';
 
