@@ -1,13 +1,13 @@
 
-const url = 'https://ecommerce-serv-app.herokuapp.com/';
+const url = 'https://ecommerce-serv-app.herokuapp.com/productos';
 
 //Get all Products
-const listaProductos = () => fetch(`${url}/productos`)
+const listaProductos = () => fetch(`${url}`)
                              .then(res => res.json());
         
 //Create
 const crearProducto = (nombre,precio,imgUrl,desc) => {
-    return fetch(`${url}/productos`, {
+    return fetch(`${url}`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -17,7 +17,7 @@ const crearProducto = (nombre,precio,imgUrl,desc) => {
 }
 //Delete
 const eliminarProducto = (id) => {
-    return fetch(`${url}/productos/${id}`, {
+    return fetch(`${url}/${id}`, {
         method: 'delete'
     });
 }
@@ -28,7 +28,7 @@ const detalleProducto = (id) => {
 }
 //update
 const actualizarProducto = (nombre,precio,imgUrl,desc,id) => {
-    return fetch(`${url}/productos/${id}`, {
+    return fetch(`${url}/${id}`, {
         method: 'PUT',
         headers: {
             'Content-type': 'application/json'
