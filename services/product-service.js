@@ -1,6 +1,6 @@
-import { environment } from'../environments/environment.prod.js'
+import { environmentProd } from'../environments/environments.prod.js'
 
-const url = environment.url;
+const url = environmentProd.url;
 
 //Get all Products
 const listaProductos = () => fetch(`${url}/productos`)
