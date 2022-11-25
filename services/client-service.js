@@ -1,6 +1,6 @@
-import { environmentProd } from'../environments/environments.prod.js'
+// import { environmentProd } from'../environments/environments.prod.js'
 
-const url = environmentProd.url;
+const url = 'https://ecommerce-serv-app.herokuapp.com/';
 
 const listaClientes = () => fetch(`${url}/perfil`)
                             .then(res => res.json());
