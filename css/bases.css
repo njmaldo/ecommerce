@@ -48,11 +48,11 @@ body.dark {
     margin: 2.5rem 0 1rem 0;
 }
 
-.dark .line {
-    background: var(--background-product);
-}
 .product__card:hover {
     box-shadow: var(--sombraLight);
+}
+.dark .line {
+    background: var(--background-product);
 }
 .dark .titulo,
 .dark .header__menu,
@@ -83,7 +83,7 @@ body.dark {
     margin: 1rem 0 1rem;
 }
 .btn {
-    width: 14rem;
+    width: 9rem;
 }
 .button--add {
     width: 7rem;
