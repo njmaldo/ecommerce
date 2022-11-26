@@ -6,7 +6,7 @@ const obtenerInformacion = async () => {
     const url = new URL(window.location);
     const id = url.searchParams.get('id');
     if(id == null) {
-        window.location.href = '/layouts/error.html';
+        window.location.href = '../error.html';
     }
     try {
         const perfil = await clientServices.detalleCliente(id);
@@ -17,7 +17,7 @@ const obtenerInformacion = async () => {
             throw new Error();
         }
     } catch (error) {
-        window.location.href = '/layouts/error.html';
+        window.location.href = '../error.html';
     }
           
 }
@@ -32,7 +32,7 @@ formulario.addEventListener('submit', (evento) => {
     const email = document.querySelector('[data-email]').value;
     clientServices.actualizarCliente(nombre,email,id)
                   .then(() => {
-                    window.location.href = '/layouts/cliente-editado.html';
+                    window.location.href = '../cliente-editado.html';
                   });
 
 })
