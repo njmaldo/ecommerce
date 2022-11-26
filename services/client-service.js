@@ -1,5 +1,5 @@
 
-const url = 'https://ecommerce-serv-app.herokuapp.com/';
+const url = 'https://ecommerce-serv-app.herokuapp.com';
 
 const listaClientes = () => fetch(`${url}/perfil`)
                             .then(res => res.json());
