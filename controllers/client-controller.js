@@ -32,7 +32,7 @@ const crearNuevaLinea = (nombre,email,id) => {
         const id = btn.id;
         clientServices.eliminarCliente(id)
                       .then(res => res)
-                      .catch(err => alert(err,'¡Ups! Hay un error...'));
+                      .catch(err => alert(err,'¡Ups! Hubo un error...'));
     });
     return linea;
 }
@@ -43,4 +43,4 @@ clientServices.listaClientes().then((data) => {
         const nuevaLinea = crearNuevaLinea(nombre,email,id);
         table.appendChild(nuevaLinea);
     });
-}).catch((err) => alert(err,'¡Ups! Hay un error...'));
+}).catch((err) => alert(err,'¡Ups! Hubo un error...'));
