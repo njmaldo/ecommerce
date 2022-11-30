@@ -42,6 +42,13 @@
 .contenido__button {
     width: 250px;
 }
+.resultado {
+    color:#ffffff;
+    font-size: 1rem;
+    margin-left: 11rem;
+    margin-top: 2rem;
+    text-align: initial;
+}
 @media screen and (min-width: 1024px) { 
     .contenido__text-center {
         padding: 3rem 0rem 1rem 25rem;

@@ -23,17 +23,17 @@ const eliminarProducto = (id) => {
 }
 
 const detalleProducto = (id) => {
-    return fetch(`${url}/productos/${id}`)
+    return fetch(`${url}/${id}`)
            .then(res => res.json());
 }
 //update
-const actualizarProducto = (nombre,precio,imgUrl,desc,id) => {
+const actualizarProducto = (nombre,precio,desc,imgUrl,id) => {
     return fetch(`${url}/${id}`, {
         method: 'PUT',
         headers: {
             'Content-type': 'application/json'
         },
-        body: JSON.stringify({nombre,precio,imgUrl,desc})
+        body: JSON.stringify({nombre,precio,desc,imgUrl})
     })
      .then(res => res)
      .catch((err) => console.log(err));     

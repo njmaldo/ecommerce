@@ -32,7 +32,7 @@ const crearNuevaLinea = (nombre,precio,imgUrl,desc,id) => {
         const id = btn.id;
         productServices.eliminarProducto(id)
                       .then(res => res)
-                      .catch(err => alert(err,'¡Ups! Ocurrio un error...'));
+                      .catch(err => alert(err,'¡Ups! Hubo un error...'));
     });
     return linea;
 }
@@ -43,6 +43,6 @@ productServices.listaProductos().then((data) => {
         const nuevaLinea = crearNuevaLinea(nombre,precio,imgUrl,desc,id);
         table.appendChild(nuevaLinea);
     });
-}).catch((err) => alert(err,'¡Ups! Ocurrio un error...'));
+}).catch((err) => alert(err,'¡Ups! Hubo un error...'));
 
 

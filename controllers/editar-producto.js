@@ -6,7 +6,7 @@ const obtenerInformacion = async () => {
     const url = new URL(window.location);
     const id = url.searchParams.get('id');
     if(id == null) {
-        window.location.href = '/layouts/error.html';
+        window.location.href = '../layouts/error.html';
     }
     
     try {
@@ -19,13 +19,14 @@ const obtenerInformacion = async () => {
             nombre.value = productos.nombre;
             precio.value = productos.precio;
             desc.value = productos.desc;
-            imgUrl.setAttribute('src', productos.imgUrl);
+            imgUrl.value = productos.imgUrl;
+            // imgUrl.setAttribute('src', productos.imgUrl);
 
         } else {
             throw new Error();
         }
     } catch (error) {
-        window.location.href = '/layouts/error.html';
+        window.location.href = '../layouts/error.html';
     }
           
 }
@@ -42,7 +43,7 @@ form.addEventListener('submit', (evento) => {
     const imgUrl = document.querySelector('[data-img]').value;
     productServices.actualizarProducto(nombre,precio,desc,imgUrl,id)
                   .then(() => {
-                    window.location.href = '/layouts/producto-editado.html';
+                    window.location.href = '../layouts/producto-editado.html';
                   });
 
 });

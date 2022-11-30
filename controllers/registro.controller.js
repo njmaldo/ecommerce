@@ -11,7 +11,7 @@ formulario.addEventListener('submit', (evento) => {
     const password = document.querySelector('[data-pass]').value;
     clientServices.crearCliente(nombre,email,password)
                   .then(() => {
-                    window.location.href = '/layouts/cliente-registrado.html';
+                    window.location.href = '../layouts/cliente-registrado.html';
                   }).catch(err => console.log(err));
 });
 
@@ -26,6 +26,6 @@ form.addEventListener('submit', (evento) => {
     const imgUrl = document.querySelector('[data-img]').value;
     productServices.crearProducto(nombre,precio,imgUrl,desc)
                   .then(() => {
-                    window.location.href = '/layouts/producto-registrado.html';
+                    window.location.href = '../layouts/producto-registrado.html';
                   }).catch(err => console.log(err));
 });

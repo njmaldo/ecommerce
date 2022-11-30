@@ -91,9 +91,7 @@
     display: block;
     grid-column: 3/5;
     position: absolute;
-
 }
-
 .header__menu-bar {
     display: none;
 }
