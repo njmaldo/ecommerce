@@ -5,7 +5,7 @@ const newProduct = (nombre,precio,imgUrl,desc) => {
     const card = document.createElement('div');
     const contenido = `
             <div class="product__img">
-                <img src="..${imgUrl}" alt="">
+                <img src="../${imgUrl}" alt="">
             </div>
             <div class="product__detail">
                 <h3 class="product__detail-title"><a href="#">${nombre}</a></h3>
