@@ -26,42 +26,42 @@
     {
       "nombre": "Crema Dental",
       "precio": "$2123",
-      "imgUrl": "../images/imagen-1.jpeg",
+      "imgUrl": "./images/imagen-1.jpeg",
       "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit!",
       "id": "d0514f75-7269-406f-a188-c0a5ddc2f33a"
     },
     {
       "nombre": "Jarabe ",
       "precio": "$345",
-      "imgUrl": "../images/imagen-2.jpeg",
+      "imgUrl": "./images/imagen-2.jpeg",
       "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit!",
       "id": "20364ad4-e264-42d4-bd75-5edee7bf0fca"
     },
     {
       "nombre": "Colágeno",
       "precio": "$3827",
-      "imgUrl": "../images/imagen-3.jpeg",
+      "imgUrl": "./images/imagen-3.jpeg",
       "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit!",
       "id": "4aa95f09-e755-4a10-a5ab-c8c5394f8941"
     },
     {
       "nombre": "Sanitizante",
       "precio": "$921",
-      "imgUrl": "../images/imagen-4.jpeg",
+      "imgUrl": "./images/imagen-4.jpeg",
       "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit!                       ",
       "id": "1a9d6f76-075b-4c82-8b53-3d56327fee6d"
     },
     {
       "nombre": "Pervinox ",
       "precio": "$1787",
-      "imgUrl": "../images/imagen-5.jpeg",
+      "imgUrl": "./images/imagen-5.jpeg",
       "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit!",
       "id": "1b8c992b-b720-40d9-b146-2a0351e7bebd"
     },
     {
       "nombre": "Crema Ojeras",
       "precio": "$2455",
-      "imgUrl": "../images/imagen-6.jpeg",
+      "imgUrl": "./images/imagen-6.jpeg",
       "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit!                     ",
       "id": "727c2750-acc3-40f6-b344-9b6fa49a9f7e"
     }
