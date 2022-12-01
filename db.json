@@ -54,14 +54,14 @@
     {
       "nombre": "Pervinox ",
       "precio": "$1787",
-      "imgUrl": "./images/imagen-5.jpeg",
+      "imgUrl": "../Ecommerce/images/imagen-5.jpeg",
       "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit!",
       "id": "1b8c992b-b720-40d9-b146-2a0351e7bebd"
     },
     {
       "nombre": "Crema Ojeras",
       "precio": "$2455",
-      "imgUrl": "./images/imagen-6.jpeg",
+      "imgUrl": "../Ecommerce/images/imagen-6.jpeg",
       "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit!                     ",
       "id": "727c2750-acc3-40f6-b344-9b6fa49a9f7e"
     }
